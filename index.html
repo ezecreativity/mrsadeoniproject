@@ -6,34 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MrsAdeoni_studentdata</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/8b2516907e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
-        <!--Creating the Nav bar-->
+        <!-- Creating the Nav bar -->
         <nav id="nav_bar">
             <label id="nav_text">MrsAdeoni</label>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul id="nav_ul">
                 <li class="nav_li"><a href="#header_div" class="nav_link">Home</a></li>
                 <li class="nav_li"><a href="#gform" class="nav_link">Add_Student</a></li>
             </ul>
         </nav>
-        <!--Creating the Header-->
+        <!-- Creating the Header -->
         <div id="header_div">
             <h1 id="header_text">Add Student details <br> to your Database!</h1>
         </div>
-        <!--Creating Google Form-->
+        <!-- Creating Google Form --> 
         <div id="gform">
             <h2 id="gform_text">Add Student</h2>
             <div id="iframe">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNl4ZifTmJA1ie6gIGs82uDNqNGIAAWBvmZ_5p2GnyW0EnWw/viewform?embedded=true" width="700" height="1900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
-        <!--Creating footer-->
+        <!-- Creating footer --> 
         <div id="footer_div">
             <p>&copy 2022</p>
             <p>made by <a href="https://web.facebook.com/charles.ezeigbo.5">Ezeigbo Emmanuel</a></p>
         </div>
     </div>
+    
+    <script src="index.js"></script>
 </body>
 </html>
