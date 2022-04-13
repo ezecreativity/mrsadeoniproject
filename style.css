@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -7,20 +8,19 @@
 
 
 /*Nav bar*/
-
 #nav_bar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     background-color: wheat;
-    height: 3rem;
 }
 
 #nav_ul{
     list-style: none;
-    float: right;
 }
 
 .nav_li{
-    display: inline-block;
     margin: 10px 50px 0px 0px;
 }
 
@@ -45,9 +45,18 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2em;
+    display: none;
+    cursor: pointer;
+}
+.hamburger:focus{
+    outline: none;
+}
 
 /*Header*/
-
 #header_div{
     height: 50vh;
     font-size: 3em;
@@ -66,6 +75,7 @@
 }
 
 /*Google Form*/
+
 #gform{
     height: 1980px;
     background-color: wheat;
@@ -83,6 +93,7 @@
 }
 
 /*Footer*/
+
 #footer_div{
     display: flex;
     justify-content: space-between;
@@ -90,7 +101,7 @@
     padding-bottom: 20px;
 }
 #footer_div>p{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 
@@ -105,7 +116,24 @@
     #header_div{
         font-size: 1.5em;
     }
-    .nav_li{
+    #nav_ul{
         display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav_ul.show{
+        display: flex;
+    }
+    #nav_bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger{
+        margin-right: 10px;
+        display: block;
+    }
+    .nav_li{
+        text-align: center;
+        margin-right: 0;
     }
 }
