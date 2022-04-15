@@ -18,6 +18,8 @@
 
 #nav_ul{
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav_li{
